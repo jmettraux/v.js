@@ -1,5 +1,5 @@
 
-VERSION:=$(shell grep VERSION src/h.js | ruby -e "puts gets.match(/VERSION = '([\d\.]+)/)[1]")
+VERSION:=$(shell grep VERSION src/v.js | ruby -e "puts gets.match(/VERSION = '([\d\.]+)/)[1]")
 
 #SHA:=$(shell git log -1 --format="%H")
 SHA:=$(shell git log -1 --format="%h")
