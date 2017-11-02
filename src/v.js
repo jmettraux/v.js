@@ -66,7 +66,7 @@ var V = (function() {
   // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email
   //
   this.isEmail = function(o) {
-    if ( ! isString(o)) return false;
+    if ( ! self.isString(o)) return false;
     return o.match(/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/);
   }
 
